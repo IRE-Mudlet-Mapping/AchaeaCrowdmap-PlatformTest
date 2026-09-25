@@ -6,7 +6,9 @@
   "map": {
     "source": "Map/map"
   },
-  "plugins": [],
+  "plugins": [
+    { "path": "crowdmap/plugins/test-danger-rule" }
+  ],
   "explorer": {
     "title": "The Achaean Map"
   }
