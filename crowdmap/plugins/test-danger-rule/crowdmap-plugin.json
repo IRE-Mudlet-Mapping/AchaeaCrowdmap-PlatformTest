@@ -1,0 +1,5 @@
+{
+  "id": "achaea-danger-rules",
+  "hooks": {},
+  "dangerRules": "danger-rules.ts"
+}
