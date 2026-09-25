@@ -1,0 +1,13 @@
+{
+  "game": {
+    "id": "achaea",
+    "title": "The Achaean Map"
+  },
+  "map": {
+    "source": "Map/map"
+  },
+  "plugins": [],
+  "explorer": {
+    "title": "The Achaean Map"
+  }
+}
