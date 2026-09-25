@@ -3,4 +3,3 @@ export { roomMarksExtraRule, roomMarksMovedRule, roomMarksNotFoundRule } from ".
 export { disallowStockrooms } from "../../../danger/rules/DisallowStockrooms.ts";
 export { disallowUnlockedWormholes } from "../../../danger/rules/DisallowUnlockedWormholes.ts";
 export { disallowWingsExits } from "../../../danger/rules/DisallowWingsExits.ts";
-export { warnDangerChangesWithoutTests } from "../../../danger/rules/WarnDangerChangesWithoutTests.ts";
