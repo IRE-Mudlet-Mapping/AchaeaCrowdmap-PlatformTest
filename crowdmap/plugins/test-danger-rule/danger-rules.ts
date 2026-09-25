@@ -1,7 +1,6 @@
-declare const message: typeof import("danger").message;
-
-export const testGameOwnedDangerRule = {
-  async check() {
-    message("Game-owned Danger extension loaded.");
-  },
-};
+// Achaea-specific checks; common map lifecycle checks are platform-owned.
+export { roomMarksExtraRule, roomMarksMovedRule, roomMarksNotFoundRule } from "../../../danger/rules/CheckRoomMarks.ts";
+export { disallowStockrooms } from "../../../danger/rules/DisallowStockrooms.ts";
+export { disallowUnlockedWormholes } from "../../../danger/rules/DisallowUnlockedWormholes.ts";
+export { disallowWingsExits } from "../../../danger/rules/DisallowWingsExits.ts";
+export { warnDangerChangesWithoutTests } from "../../../danger/rules/WarnDangerChangesWithoutTests.ts";

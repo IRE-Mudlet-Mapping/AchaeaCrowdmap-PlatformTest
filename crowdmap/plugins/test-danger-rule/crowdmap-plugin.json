@@ -1,5 +1,5 @@
 {
-  "id": "achaea-test-danger-rule",
+  "id": "achaea-danger-rules",
   "hooks": {},
   "dangerRules": "danger-rules.ts"
 }
