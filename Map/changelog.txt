@@ -1,5 +1,6 @@
 changelog = {
 	[[Initial release.]],
+	[[Platform integration test: valid map metadata update.]],
 	[[Added Temple of War]],
 	[[Added in special exits for Hashan's warp hubs]],
 	[[Fixed some misc exit issues in some areas and added Ivory Temple and Temple of Gaia]],
