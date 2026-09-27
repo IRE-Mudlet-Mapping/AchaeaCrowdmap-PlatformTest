@@ -1,5 +1,9 @@
 version: 2
 updates:
+  - package-ecosystem: "npm"
+    directory: "/crowdmap/plugins/achaea-danger-rules"
+    schedule:
+      interval: "daily"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
