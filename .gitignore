@@ -1,9 +1,6 @@
-node_modules
-mongodb-realm
 website/Map
 Map/*
 !Map/changelog.txt
 !Map/current.js
 !Map/map
 !Map/version.txt
-.env
