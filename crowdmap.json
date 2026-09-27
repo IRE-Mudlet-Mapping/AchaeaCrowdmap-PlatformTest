@@ -7,7 +7,7 @@
     "source": "Map/map"
   },
   "plugins": [
-    { "path": "crowdmap/plugins/test-danger-rule" }
+    { "path": "crowdmap/plugins/achaea-danger-rules" }
   ],
   "explorer": {
     "title": "The Achaean Map"
