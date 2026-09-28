@@ -4,12 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "danger:local": "node scripts/danger-local.mjs",
+    "danger:local": "crowdmap-danger local",
     "test": "node --test tests/rules.test.ts",
     "typecheck": "tsc -p tsconfig.json"
   },
   "dependencies": {
-    "@ire-mudlet-mapping/crowdmap-danger": "^1.8.1",
+    "@ire-mudlet-mapping/crowdmap-danger": "^1.9.1",
     "js-yaml": "^5.4.2",
     "lodash": "^4.18.1",
     "mudlet-map-binary-reader": "^2.0.0"
@@ -18,7 +18,6 @@
     "@types/js-yaml": "^4.0.9",
     "@types/lodash": "^4.17.25",
     "@types/node": "^26.6.2",
-    "danger": "^14.0.7",
     "typescript": "^6.0.3"
   },
   "engines": {
