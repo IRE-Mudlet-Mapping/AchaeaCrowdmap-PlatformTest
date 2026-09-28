@@ -9,9 +9,10 @@ The repository owns:
 - `crowdmap.json`;
 - thin reusable-workflow callers in `.github/workflows/`;
 - Achaea-specific Danger rules, tests, and their isolated Node dependencies in
-  `crowdmap/plugins/achaea-danger-rules/`; and
-- the explorer assets in `website/` until those are migrated to the maintained
-  map-browser upstream.
+  `crowdmap/plugins/achaea-danger-rules/`.
 
 Map export, textual and visual diffs, common Danger rules, dependency-update
-validation, publishing, and Dependabot auto-merge behavior are platform-owned.
+validation, the centralized explorer, publishing, and Dependabot auto-merge
+behavior are platform-owned. A later platform release can replace the
+centralized vendored explorer with the maintained map-browser without adding
+web assets back to this repository.

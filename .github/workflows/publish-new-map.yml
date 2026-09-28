@@ -11,5 +11,3 @@ permissions:
 jobs:
   publish:
     uses: IRE-Mudlet-Mapping/CrowdmapPlatform/.github/workflows/publish-map.yml@v1
-    with:
-      website-directory: website
