@@ -189,7 +189,7 @@ h2 a, h2 a:hover {
     top: 100px;
     width: 400px;
     height: 400px;
-    pointer-events: none; 
+    pointer-events: none;
     overflow: hidden;
     display: flex;
     align-items: flex-start;
@@ -201,8 +201,8 @@ h2 a, h2 a:hover {
 
 .preview {
     position: absolute;
-    display: flex; 
-    flex-direction: column; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(3px) brightness(120%);
