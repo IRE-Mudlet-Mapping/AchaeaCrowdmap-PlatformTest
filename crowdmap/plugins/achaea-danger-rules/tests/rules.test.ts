@@ -1,12 +1,9 @@
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
+import { fileURLToPath } from "node:url";
 import type { DangerDSLType } from "danger";
-import type { Rule } from "../classes/Rule.ts";
-import { createRoomMarkRules } from "../rules/CheckRoomMarks.ts";
-import { createDisallowStockroomsRule } from "../rules/DisallowStockrooms.ts";
-import { createDisallowUnlockedWormholesRule } from "../rules/DisallowUnlockedWormholes.ts";
-import { createDisallowWingsExitsRule } from "../rules/DisallowWingsExits.ts";
+import type { Rule } from "@ire-mudlet-mapping/crowdmap-danger/Rule";
 
 const results = { failures: [] as string[], messages: [] as string[], warnings: [] as string[] };
 Object.assign(globalThis, {
@@ -14,6 +11,20 @@ Object.assign(globalThis, {
   message: (text: string) => results.messages.push(text),
   warn: (text: string) => results.warnings.push(text),
 });
+
+process.env.CROWDMAP_ROOT ??= fileURLToPath(new URL("../../../../", import.meta.url));
+
+const [
+  { createRoomMarkRules },
+  { createDisallowStockroomsRule },
+  { createDisallowUnlockedWormholesRule },
+  { createDisallowWingsExitsRule },
+] = await Promise.all([
+  import("../rules/CheckRoomMarks.ts"),
+  import("../rules/DisallowStockrooms.ts"),
+  import("../rules/DisallowUnlockedWormholes.ts"),
+  import("../rules/DisallowWingsExits.ts"),
+]);
 
 function mapFixture(name: string) {
   return JSON.parse(readFileSync(new URL(`./maps/${name}.json`, import.meta.url), "utf8"));

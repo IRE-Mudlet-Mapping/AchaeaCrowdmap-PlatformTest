@@ -2,8 +2,8 @@ import type { MudletRoom } from "mudlet-map-binary-reader";
 import { readFileSync } from "node:fs";
 import * as yaml from "js-yaml";
 import _ from "lodash";
-import { MapChangeRule } from "../classes/Rule.ts";
-import mapModel from "../helpers/MapModel.ts";
+import { MapChangeRule } from "@ire-mudlet-mapping/crowdmap-danger/Rule";
+import mapModel from "@ire-mudlet-mapping/crowdmap-danger/MapModel";
 
 type RoomMarkMap = {
   rooms: Record<number, Pick<MudletRoom, "userData">>;

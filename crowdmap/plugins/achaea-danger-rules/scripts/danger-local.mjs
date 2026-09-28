@@ -13,9 +13,7 @@ if (existsSync(rootNodeModules)) {
 }
 
 try {
-  for (const path of ["classes", "helpers", "rules"]) {
-    cpSync(join(pluginRoot, path), join(scratch, path), { recursive: true });
-  }
+  cpSync(join(pluginRoot, "rules"), join(scratch, "rules"), { recursive: true });
   for (const path of ["dangerfile.ts", "danger-rules.ts"]) {
     cpSync(join(pluginRoot, path), join(scratch, path));
   }
