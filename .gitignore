@@ -1,6 +1,5 @@
 node_modules
 mongodb-realm
-.crowdmap-platform
 website/Map
 Map/*
 !Map/changelog.txt
