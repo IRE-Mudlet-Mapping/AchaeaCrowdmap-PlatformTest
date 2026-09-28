@@ -6,10 +6,9 @@ checks come from CrowdmapPlatform.
 Each rule lives in its own file under `rules/`. Edit
 `rules/allowed_room_marks.yaml` to maintain the room-mark allowlist.
 
-The rule base classes and map loader come directly from CrowdmapPlatform. For
-local development, make the platform checkout available at
-`.crowdmap-platform` in the repository root (a symlink to a neighbouring
-checkout is sufficient). CI creates that checkout automatically.
+The rule base classes and map loader come from the public
+`@ire-mudlet-mapping/crowdmap-danger` package. No CrowdmapPlatform checkout or
+filesystem link is needed for local development.
 
 From the repository root:
 
