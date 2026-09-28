@@ -6,6 +6,11 @@ checks come from CrowdmapPlatform.
 Each rule lives in its own file under `rules/`. Edit
 `rules/allowed_room_marks.yaml` to maintain the room-mark allowlist.
 
+The rule base classes and map loader come directly from CrowdmapPlatform. For
+local development, make the platform checkout available at
+`.crowdmap-platform` in the repository root (a symlink to a neighbouring
+checkout is sufficient). CI creates that checkout automatically.
+
 From the repository root:
 
 ```sh
