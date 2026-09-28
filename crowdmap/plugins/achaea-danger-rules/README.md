@@ -15,8 +15,8 @@ wrapper script.
 From the repository root:
 
 ```sh
-npm ci --prefix crowdmap/plugins/achaea-danger-rules
-npm test --prefix crowdmap/plugins/achaea-danger-rules
-npm run typecheck --prefix crowdmap/plugins/achaea-danger-rules
-npm run danger:local --prefix crowdmap/plugins/achaea-danger-rules
+npm ci
+npm test
+npm run typecheck
+npm run danger
 ```
