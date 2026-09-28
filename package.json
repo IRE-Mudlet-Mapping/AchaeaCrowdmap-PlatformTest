@@ -1,0 +1,14 @@
+{
+  "name": "@ire-mudlet-mapping/achaea-crowdmap",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "postinstall": "npm ci --prefix crowdmap/plugins/achaea-danger-rules",
+    "test": "npm test --prefix crowdmap/plugins/achaea-danger-rules",
+    "typecheck": "npm run typecheck --prefix crowdmap/plugins/achaea-danger-rules",
+    "danger": "npm run danger:local --prefix crowdmap/plugins/achaea-danger-rules"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

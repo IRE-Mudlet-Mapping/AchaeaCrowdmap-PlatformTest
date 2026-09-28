@@ -16,3 +16,18 @@ validation, the centralized explorer, publishing, and Dependabot auto-merge
 behavior are platform-owned. The explorer uses the maintained
 `mudlet-map-browser-script` package without adding web assets or browser
 dependencies to this repository.
+
+## Developing Achaea Danger rules
+
+The shared rule framework is an ordinary public npm dependency. From the
+repository root, the complete local workflow is:
+
+```sh
+npm ci
+npm test
+npm run typecheck
+npm run danger
+```
+
+No CrowdmapPlatform checkout, symlink, submodule, registry login, or special
+Windows setup is required.
