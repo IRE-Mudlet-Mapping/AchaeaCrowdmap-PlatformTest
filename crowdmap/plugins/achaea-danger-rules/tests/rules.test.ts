@@ -2,8 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import type { DangerDSLType } from "danger";
-import type { Rule } from "@ire-mudlet-mapping/crowdmap-danger/Rule";
+import type { DangerDSLType, Rule } from "@ire-mudlet-mapping/crowdmap-danger/Rule";
 
 const results = { failures: [] as string[], messages: [] as string[], warnings: [] as string[] };
 Object.assign(globalThis, {

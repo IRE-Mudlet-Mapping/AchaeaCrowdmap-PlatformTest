@@ -1,0 +1,8 @@
+{
+  "id": "achaea-npc-database",
+  "hooks": {
+    "after-export": ["node", "scripts/update-npcs.mjs"],
+    "before-publish": ["node", "scripts/validate-published-npcs.mjs"],
+    "after-publish": ["node", "scripts/report-published-npcs.mjs"]
+  }
+}

@@ -7,6 +7,10 @@
     "source": "Map/map"
   },
   "plugins": [
-    { "path": "crowdmap/plugins/achaea-danger-rules" }
-  ]
+    { "path": "crowdmap/plugins/achaea-danger-rules" },
+    { "path": "crowdmap/plugins/achaea-npc-database" }
+  ],
+  "explorer": {
+    "npcUrl": "Map/denizen.json"
+  }
 }
