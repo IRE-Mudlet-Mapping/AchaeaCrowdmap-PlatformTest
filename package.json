@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "node --test crowdmap/plugins/achaea-danger-rules/tests/rules.test.ts",
+    "test": "node --test crowdmap/plugins/achaea-danger-rules/tests/rules.test.ts crowdmap/plugins/*/tests/*.test.mjs",
     "typecheck": "tsc -p crowdmap/plugins/achaea-danger-rules/tsconfig.json",
     "danger": "crowdmap-danger local"
   },

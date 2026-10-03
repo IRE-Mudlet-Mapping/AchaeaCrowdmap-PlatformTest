@@ -11,6 +11,8 @@ The repository owns:
 - Achaea-specific Danger rules and tests in
   `crowdmap/plugins/achaea-danger-rules/`, with their optional Node tooling
   declared once at the repository root.
+- the game-owned Achaea NPC database publication plugin in
+  `crowdmap/plugins/achaea-npc-database/`, exercising every publication hook.
 
 Map export, textual and visual diffs, common Danger rules, dependency-update
 validation, the centralized explorer, publishing, and Dependabot auto-merge
