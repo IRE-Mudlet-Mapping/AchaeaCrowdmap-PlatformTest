@@ -17,7 +17,7 @@
     "@types/js-yaml": "^4.0.9",
     "@types/lodash": "^4.17.25",
     "@types/node": "^26.6.2",
-    "typescript": "^6.0.3"
+    "typescript": "^7.0.2"
   },
   "engines": {
     "node": ">=22.12.0"
