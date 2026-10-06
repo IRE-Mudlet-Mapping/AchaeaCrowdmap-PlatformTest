@@ -1,7 +1,8 @@
 {
   "formatVersion": 1,
   "userData": {
-    "mapFeatures": "{\"subdivision\":\"S\",\"ferry\":\"F\",\"grate\":\"G\",\"commodityshop\":\"C\",\"news\":\"N\",\"stronghold\":\"M\",\"shop\":\"$\",\"locksmith\":\"L\",\"harbour\":\"H\",\"wilderness\":\"W\",\"arena\":\"A\",\"postoffice\":\"P\",\"bank\":\"B\"}"
+    "mapFeatures": "{\"subdivision\":\"S\",\"ferry\":\"F\",\"grate\":\"G\",\"commodityshop\":\"C\",\"news\":\"N\",\"stronghold\":\"M\",\"shop\":\"$\",\"locksmith\":\"L\",\"harbour\":\"H\",\"wilderness\":\"W\",\"arena\":\"A\",\"postoffice\":\"P\",\"bank\":\"B\"}",
+    "crowdmap-platform-test": "danger-map-rule-validation"
   },
   "areas": [
     {
