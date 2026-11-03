@@ -1,0 +1,32 @@
+name: Temporary Cloudinary diagnostic
+
+on:
+  pull_request:
+    branches: [development]
+    paths:
+      - .github/workflows/cloudinary-diagnostic.yml
+      - diagnostics/cloudinary.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  diagnose:
+    if: github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.user.login == 'keneanung'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+      - name: Install the exact SDK used by the shared visual action
+        run: npm install --prefix "$RUNNER_TEMP/cloudinary-diagnostic" cloudinary@2.7.0 --ignore-scripts --no-audit --no-fund
+      - name: Run redacted diagnostics and clean up created assets
+        run: node diagnostics/cloudinary.mjs
+        env:
+          CLOUDINARY_NAME: ${{ secrets.CLOUDINARY_NAME }}
+          CLOUDINARY_KEY: ${{ secrets.CLOUDINARY_KEY }}
+          CLOUDINARY_SECRET: ${{ secrets.CLOUDINARY_SECRET }}
